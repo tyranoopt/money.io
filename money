@@ -2,36 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Payment Website</title>
+  <title>Click Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #game-container {
+      margin-top: 100px;
+    }
+    #score {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    #click-me {
+      padding: 20px;
+      font-size: 18px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to our Payment Website!</h1>
-  </header>
+  <h1>Click Game</h1>
+  <div id="game-container">
+    <p id="score">Score: <span id="points">0</span></p>
+    <button id="click-me" onclick="increaseScore()">Click Me!</button>
+  </div>
 
-  <main>
-    <section id="products">
-      <h2>Products</h2>
-      <!-- Display your products here -->
-      <div class="product">
-        <h3>Product 1</h3>
-        <p>Price: $10</p>
-        <button onclick="buyProduct(10)">Buy Now</button>
-      </div>
-      <!-- Add more products -->
-    </section>
-
-    <section id="cart">
-      <h2>Shopping Cart</h2>
-      <p>Total: $<span id="total">0</span></p>
-      <button onclick="checkout()">Checkout</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Payment Website</p>
-  </footer>
-
-  <script src="payment.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
