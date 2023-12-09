@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #game-container {
+      margin-top: 100px;
+    }
+    #score {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    #click-me {
+      padding: 20px;
+      font-size: 18px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click Game</h1>
+  <div id="game-container">
+    <p id="score">Score: <span id="points">0</span></p>
+    <button id="click-me" onclick="increaseScore()">Click Me!</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
